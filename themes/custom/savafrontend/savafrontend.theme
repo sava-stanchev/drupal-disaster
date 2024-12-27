@@ -1,6 +1,14 @@
 <?php
-function savafrontend_preprocess_page(&$variables) {
-    // Add a custom CSS class to the body tag.
-    $variables['attributes']['class'][] = 'savafrontend-theme';
+function savafrontend_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+        if ($node->getType() == 'page') {
+            if ($node->getTitle() == 'About') {
+                $suggestions[] = 'page__about';
+            }
+            if ($node->getTitle() == 'Services') {
+                $suggestions[] = 'page__services';
+            }
+        }
+    }
 }
 ?>
