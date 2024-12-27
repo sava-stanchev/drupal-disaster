@@ -1,0 +1,25 @@
+name: frontend
+type: theme
+"base theme": stable9
+libraries:
+  - frontend/global-styling
+  - frontend/base
+  - frontend/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - frontend/user
+  core/drupal.dropbutton:
+    - frontend/dropbutton
+  core/drupal.dialog:
+    - frontend/dialog
+  file/drupal.file:
+    - frontend/file
+  core/drupal.progress:
+    - frontend/progress
+version: 1.0.0
+project: drupal
+datestamp: 1734475254
+description: ""
+core_version_requirement: ^10
+generator: "starterkit_theme:10.4.0"
