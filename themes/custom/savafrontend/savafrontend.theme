@@ -1,0 +1,6 @@
+<?php
+function savafrontend_preprocess_page(&$variables) {
+    // Add a custom CSS class to the body tag.
+    $variables['attributes']['class'][] = 'savafrontend-theme';
+}
+?>

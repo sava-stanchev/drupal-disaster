@@ -1,0 +1,13 @@
+name: "Savafrontend"
+type: theme
+description: "A custom theme that extends the Olivero theme."
+core_version_requirement: ^10
+base theme: olivero
+libraries:
+  - savafrontend/global-styling
+regions:
+  header: "Header"
+  content: "Content"
+  footer: "Footer"
+  sidebar_first: "Sidebar First"
+  sidebar_second: "Sidebar Second"
