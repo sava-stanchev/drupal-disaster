@@ -1,13 +1,7 @@
-<div style="border:1px solid red">
-  <header>
-    <h1 class="site-title">{{ site_name }}</h1>
-    {{ page.header }}
-  </header>
-  <main>
+<div class="page-wrapper">
+  {% include '@savafrontend/layout/header.html.twig' %}
+  <main role="main">
     {{ page.content }}
   </main>
-  <footer>
-    {{ page.footer }}
-    <p>© {{ "now"|date("Y") }} Savafrontend</p>
-  </footer>
+  {% include '@savafrontend/layout/footer.html.twig' %}
 </div>
